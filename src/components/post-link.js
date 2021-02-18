@@ -7,14 +7,14 @@ export const PostLink = ({ post }) => {
     const { title, updatedAt, image } = post
     const description = post.description.description
     const pageLink = `/post/${post.slug}/`
-    console.log(image.file.url)
-    const imgUrl = "https:" + image.file.url
+    // const imgUrl = "https:" + image.file.url
 
     return (
         <Link to={pageLink} className="post-link-anchor">
             <div className="post-link">
                 <div>
-                    <img src={imgUrl} className="post-link-image" alt="post-cover" />
+                    {/* <img src={imgUrl} className="post-link-image" alt="post-cover" /> */}
+                    <img src={image.file.url} className="post-link-image" alt="post-cover" />
                 </div>
                 <div className="post-link-text">
                     <h2>{title}</h2>

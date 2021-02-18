@@ -6,7 +6,6 @@ import { Layout } from "../components/layout"
 export default function Post({ pageContext }) {
     const { title, updatedAt, image } = pageContext.post
     const body = pageContext.post.body.childMarkdownRemark.html
-    const imgUrl = "https:" + image.file.url
 
     return (
         <Layout>
@@ -14,7 +13,7 @@ export default function Post({ pageContext }) {
                 <h1>{title}</h1>
                 <p className="post-date">{updatedAt}</p>
             </div>
-            <img src={imgUrl} className="post-image" alt="post-cover"></img>
+            <img src={image.file.url} className="post-image" alt="post-cover"></img>
             <div dangerouslySetInnerHTML={{ __html: body }} className="post-body" />
         </Layout>
     )
