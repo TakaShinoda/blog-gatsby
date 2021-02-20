@@ -4,7 +4,6 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
-// console.log()
 
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
