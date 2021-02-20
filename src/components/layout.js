@@ -4,11 +4,11 @@ import { Header } from "./header"
 import { Footer } from "./footer"
 
 export const Layout = ({ children }) => {
-    return (
-        <div className="layout">
-            <Header />
-            <main>{children}</main>
-            <Footer />
-        </div>
-    )
+  return (
+    <div className="layout">
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </div>
+  )
 }

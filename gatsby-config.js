@@ -4,6 +4,7 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
+// console.log()
 
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
@@ -14,15 +15,15 @@ module.exports = {
   siteMetadata: {
     title: "Dev Blog",
     description: "Gatsbyで作成したブログサイトです。",
-    author: "Engineer X"
+    author: "Engineer X",
   },
   plugins: [
     {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: process.env.GATSBY_CONTENTFUL_SPACE_ID,
-        accessToken: process.env.GATSBY_CONTENTFUL_API_KEY
-      }
+        accessToken: process.env.GATSBY_CONTENTFUL_API_KEY,
+      },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -33,6 +34,6 @@ module.exports = {
         gfm: true,
         plugins: [],
       },
-    }
+    },
   ],
 }
