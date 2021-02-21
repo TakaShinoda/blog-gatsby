@@ -6,7 +6,6 @@ import {
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons"
 
-
 export const Hero = () => {
   return (
     <div className="hero">
@@ -23,7 +22,7 @@ export const Hero = () => {
           alt="avatar"
         />
         <p className="hero-author-text">
-          I'm a front-end engineer. Love JavaScript.
+          I'm a front-end engineer.
           <br />
           <a
             className="icon-rink github"
