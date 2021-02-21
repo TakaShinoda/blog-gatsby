@@ -11,14 +11,13 @@ export const PostLink = ({ post }) => {
   return (
     <Link to={pageLink} className="post-link-anchor">
       <div className="post-link">
-        <div>
-          {/* <img src={imgUrl} className="post-link-image" alt="post-cover" /> */}
-          <img
-            src={image.file.url}
-            className="post-link-image"
-            alt="post-cover"
-          />
-        </div>
+        {/* <div> */}
+        <img
+          src={image.file.url}
+          className="post-link-image"
+          alt="post-cover"
+        />
+        {/* </div> */}
         <div className="post-link-text">
           <h2>{title}</h2>
           <p className="post-link-body">{description}</p>

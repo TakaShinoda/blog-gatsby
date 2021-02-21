@@ -31,9 +31,9 @@
 @media screen and (max-width: 575px) {
   .post-link {
     grid-template-columns: 1fr;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 40px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-radius: 10px;
+    background: #dedede;
+    box-shadow: 5px 5px 20px #c8c9cc, -5px -5px 20px #ffffff;
   }
   .post-link-image {
     border-top-right-radius: 10px;
@@ -45,11 +45,15 @@
   .post-link {
     grid-template-columns: 280px 1fr;
     grid-column-gap: 24px;
-  }
-  .post-link-image {
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 60px -10px,
-      rgba(0, 0, 0, 0.33) 0px 18px 36px -18px;
+
     border-radius: 10px;
+    background: #dedede;
+    box-shadow: 5px 5px 20px #c8c9cc, -5px -5px 20px #ffffff;
+  }
+
+  .post-link-image {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 }
 
