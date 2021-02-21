@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const Image = ({ assetUrl, alt }) => {
+export const Image = ({ assetUrl, alt }) => {
   const { allImageSharp } = useStaticQuery(graphql`
     query {
       allImageSharp {
@@ -25,5 +25,3 @@ const Image = ({ assetUrl, alt }) => {
     />
   )
 }
-
-export default Image
