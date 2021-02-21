@@ -10,7 +10,7 @@ export default function Post({ pageContext }) {
   const description = pageContext.post.description.description
 
   return (
-    <Layout>
+    <Layout home={false}>
       <SEO title={title} description={description} />
       <div className="post-header">
         <h1>{title}</h1>

@@ -6,7 +6,7 @@ import { graphql } from "gatsby"
 
 export default function Home({ data }) {
   return (
-    <Layout>
+    <Layout home>
       <Hero />
       {data.allContentfulPost.edges.map(edge => (
         <PostLink key={edge.node.slug} post={edge.node} />

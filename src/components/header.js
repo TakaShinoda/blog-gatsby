@@ -1,13 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
-import LOGO_IMG from "../../static/logo.png"
 import "../styles/header.css"
+import Image from "./image"
 
 export const Header = () => {
   return (
     <header>
       <Link to="/">
-        <img src={LOGO_IMG} className="logo-image" alt="logo" />
+        <div style={{ maxWidth: `180px` }}>
+          <Image assetUrl="logo.png" alt="logo" />
+        </div>
       </Link>
     </header>
   )

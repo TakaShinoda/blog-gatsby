@@ -17,6 +17,15 @@ module.exports = {
     author: "Engineer X",
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
     {
       resolve: `gatsby-source-contentful`,
       options: {

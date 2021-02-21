@@ -3,10 +3,11 @@ import "../styles/layout.css"
 import { Header } from "./header"
 import { Footer } from "./footer"
 
-export const Layout = ({ children }) => {
+export const Layout = ({ children, home }) => {
+  console.log(home)
   return (
     <div className="layout">
-      <Header />
+      {!home && <Header />}
       <main>{children}</main>
       <Footer />
     </div>
