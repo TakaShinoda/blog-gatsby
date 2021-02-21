@@ -13,11 +13,26 @@
 
 .hero-author-image {
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
 }
 
 .hero-author-text {
   color: #595959;
   margin: 0 0 0 10px;
+}
+
+.icon {
+  font-size: 30px;
+  margin-top: 5px;
+  margin-right: 8px;
+  text-decoration: none;
+}
+
+.github {
+  color: #333;
+}
+
+.twitter {
+  color: #1da1f2;
 }

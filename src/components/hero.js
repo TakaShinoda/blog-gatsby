@@ -1,5 +1,10 @@
 import React from "react"
 import "../styles/hero.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faGithubSquare,
+  faTwitterSquare
+} from "@fortawesome/free-brands-svg-icons"
 
 export const Hero = () => {
   return (
@@ -17,9 +22,24 @@ export const Hero = () => {
           alt="avatar"
         />
         <p className="hero-author-text">
-          Written by XXXX.
+          I'm a front-end engineer. Love JavaScript.
           <br />
-          Front Engineer at Hoge.Inc. Love JavaScript.
+          <a
+            className="icon-rink github"
+            href="https://github.com/TakaShinoda"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon className="icon" icon={faGithubSquare} />
+          </a>
+          <a
+            className="icon-rink twitter"
+            href="https://twitter.com/tttttt_621_s"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <FontAwesomeIcon className="icon" icon={faTwitterSquare} />
+          </a>
         </p>
       </div>
     </div>
