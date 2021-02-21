@@ -16,7 +16,7 @@ export default function Post({ pageContext }) {
         <h1>{title}</h1>
         <p className="post-date">{updatedAt}</p>
       </div>
-      <img src={image.file.url} className="post-image" alt="post-cover"></img>
+      <img src={image.file.url} className="post-image" alt="post-cover" />
       <div dangerouslySetInnerHTML={{ __html: body }} className="post-body" />
     </Layout>
   )

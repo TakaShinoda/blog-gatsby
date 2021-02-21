@@ -3,7 +3,7 @@ import "../styles/hero.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faGithubSquare,
-  faTwitterSquare
+  faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons"
 
 export const Hero = () => {
@@ -38,7 +38,7 @@ export const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-          <FontAwesomeIcon className="icon" icon={faTwitterSquare} />
+            <FontAwesomeIcon className="icon" icon={faTwitterSquare} />
           </a>
         </p>
       </div>
