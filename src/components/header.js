@@ -8,7 +8,7 @@ export const Header = () => {
     <header>
       <Link to="/">
         <div style={{ maxWidth: `180px` }}>
-          <Image assetUrl="logo.png" alt="logo" />
+          <Image assetUrl="logo.png" alt="logo" className="logo"/>
         </div>
       </Link>
     </header>

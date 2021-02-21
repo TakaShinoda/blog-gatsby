@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { Layout } from "../components/layout"
 import { SEO } from "../components/seo"
-import NOT_FOUND_IMG from "../../static/404.jpg"
+// import NOT_FOUND_IMG from "../../static/404.jpg"
 import "../styles/404.css"
 import { Image } from "../components/image"
 

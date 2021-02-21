@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-export const Image = ({ assetUrl, alt }) => {
+export const Image = ({ assetUrl, alt, className }) => {
   const { allImageSharp } = useStaticQuery(graphql`
     query {
       allImageSharp {
@@ -22,6 +22,7 @@ export const Image = ({ assetUrl, alt }) => {
         allImageSharp.nodes.find(n => n.fluid.originalName === assetUrl).fluid
       }
       alt={alt}
+      className={className}
     />
   )
 }
