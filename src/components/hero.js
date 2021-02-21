@@ -29,6 +29,7 @@ export const Hero = () => {
             href="https://github.com/TakaShinoda"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="githubへのリンク"
           >
             <FontAwesomeIcon className="icon" icon={faGithubSquare} />
           </a>
@@ -37,6 +38,7 @@ export const Hero = () => {
             href="https://twitter.com/tttttt_621_s"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="twitterへのリンク"
           >
             <FontAwesomeIcon className="icon" icon={faTwitterSquare} />
           </a>
