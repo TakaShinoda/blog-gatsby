@@ -6,10 +6,6 @@ import {
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons"
 
-import "@fortawesome/fontawesome-svg-core/styles.css"
-import { config } from "@fortawesome/fontawesome-svg-core"
-// Prevent fontawesome from dynamically adding its css since we did it manually above
-config.autoAddCss = false
 
 export const Hero = () => {
   return (
