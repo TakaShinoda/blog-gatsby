@@ -14,9 +14,7 @@ export default function NotFound() {
         <h1>404 Not Found</h1>
         <Link to="/">トップページへ</Link>
       </div>
-      <div style={{ maxWidth: `100%` }}>
       <Image assetUrl="404.jpg" alt="not found" className="not-found-image" />
-      </div>
     </Layout>
   )
 }
