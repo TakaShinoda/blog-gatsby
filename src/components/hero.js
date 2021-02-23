@@ -5,6 +5,9 @@ import {
   faGithubSquare,
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons"
+import { config } from "@fortawesome/fontawesome-svg-core"
+
+config.autoAddCss = false;
 
 export const Hero = () => {
   return (
