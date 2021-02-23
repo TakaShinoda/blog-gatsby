@@ -4,7 +4,6 @@ import { Layout } from "../components/layout"
 import { SEO } from "../components/seo"
 // import NOT_FOUND_IMG from "../../static/404.jpg"
 import "../styles/404.css"
-import { Image } from "../components/image"
 
 export default function NotFound() {
   return (
@@ -14,7 +13,6 @@ export default function NotFound() {
         <h1>404 Not Found</h1>
         <Link to="/">トップページへ</Link>
       </div>
-      <Image assetUrl="404.jpg" alt="not found" className="not-found-image" />
     </Layout>
   )
 }
